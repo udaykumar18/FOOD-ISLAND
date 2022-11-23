@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #f54748;
+  --secondary: #0b132b;
+  --white: #fff;
+  --black: #111;
+  --grey: #636363;
+  --yellow: #f5c723;
+  --bg: #f2efac;
+  --bg1: #eae9b7;
+  --textlight: #535353;
+  --facebook: #1877f2;
+  --instagram: #e4405f;
+  --youtube: #cd201f;
+  --twitter: #1da1f2;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+a {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+
+/* ############################ UTILITY CLASSES ###########################  */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flow-root;
+}
+.flex {
+  display: flex;
+}
+.align-items {
+  align-items: center;
+}
+.justify-content {
+  justify-content: space-between;
+}
+.spacearound {
+  justify-content: space-around;
+}
+.text-align {
+  text-align: center;
+}
+.ud-btn {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+}
+
+.pink {
+  color: var(--primary);
+}
+/* ##################### HEADER #####################  */
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 0.9rem 0;
+}
+
+header .logo {
+  width: 220px;
+  height: auto;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header .menu ul li a {
+  margin-right: 3rem;
+  color: var(--black);
+}
+header .menu ul li .active {
+  color: var(--primary);
+  font-weight: 600;
+}
+header .menu ul li .primary-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  transition: 0.3s;
+}
+header .menu ul li .primary-btn:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+header .menu ul li .secondary-btn {
+  color: var(--primary);
+  font-weight: 600;
+  transition: 0.3s;
+}
+header .menu ul li .secondary-btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* ################# SLIDER ##############  */
+
+.fi-slider {
+  width: 100%;
+  height: auto;
+}
+
+.fi-slider .container-fluid .col-md-12 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 100%;
+  opacity: 1;
+}
+.carousel-indicators .active {
+  background-color: var(--primary);
+}
+
+.carousel-caption {
+  text-align: left;
+  bottom: 15.25rem;
+}
+
+.carousel-caption h1 {
+  font-size: 4.5rem;
+}
+.carousel-caption h1 span {
+  color: var(--primary);
+}
+.carousel-caption p {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+.carousel-caption .slider-btns {
+  margin-top: 2rem;
+}
+.carousel-caption .slider-btns a {
+  padding: 0.7rem 2rem;
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+.carousel-caption .slider-btns .primary-btn {
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--primary);
+  transition: 1s;
+}
+.carousel-caption .slider-btns .primary-btn:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.carousel-caption .slider-btns .secondary-btn {
+  color: var(--primary);
+  transition: 0.5s;
+}
+.carousel-caption .slider-btns .secondary-btn .icon {
+  position: relative;
+  top: 3px;
+}
+.carousel-caption .slider-btns .secondary-btn:hover {
+  background-color: var(--white);
+}
+.fi-slider .slider-img {
+  position: relative;
+  width: 100%;
+}
+.fi-slider .slider-img::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* ################ SERVICES ##################  */
+.fi-services {
+  width: 100%;
+  height: auto;
+  padding: 8rem 0;
+}
+.fi-heading .heading h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.fi-heading .sub-heading h2 {
+  color: var(--black);
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.fi-services .services-card {
+  padding: 5rem;
+}
+.fi-services .services-card .services-img {
+  width: 13rem;
+  margin: 0 auto;
+}
+.fi-services .services-card .services-img img {
+  width: 100%;
+}
+
+.fi-services .services-card .services-content h3 {
+  font-size: 2.5rem;
+  margin-top: 0.6rem;
+}
+.fi-services .services-card .services-content p {
+  color: var(--grey);
+  font-weight: 400;
+}
+
+/* ########### MENU ############3  */
+
+.fi-menu {
+  width: 100%;
+  height: auto;
+  padding: 8rem 0;
+  background-color: var(--bg);
+}
+
+.fi-menu .menu-card {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.fi-menu .menu-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: 0.3s;
+}
+.fi-menu .menu-card:hover:before {
+  transform: translateY(0%);
+}
+.fi-menu .menu-card:hover .card-img {
+  background-color: var(--white);
+}
+.fi-menu .menu-card:hover {
+  transform: translateY(-10%);
+}
+.fi-menu .menu-card .card-img {
+  width: 9rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: var(--bg1);
+  border-radius: 50%;
+  padding: 2rem;
+  transition: 0.4s;
+}
+.fi-menu .menu-card .card-img img {
+  width: 100%;
+}
+.fi-menu .menu-card h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* ############ CUSTOMER ############  */
+
+.fi-customer {
+  width: 100%;
+  height: auto;
+  padding: 8rem 0;
+}
+.fi-customer .customer-card {
+  padding: 2rem;
+}
+.fi-customer .customer-card .card-content h2 {
+  color: var(--textlight);
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+.fi-customer .customer-card .customer-profile .profile {
+  width: 55px;
+  margin-right: 1rem;
+}
+.fi-customer .customer-card .customer-profile .profile img {
+  width: 100%;
+}
+.fi-customer .customer-card .customer-profile .profile-content h3 {
+  font-weight: 600;
+}
+.fi-customer .customer-card .customer-profile .profile-content h5 {
+  color: var(--textlight);
+}
+/* ############# APP ##############  */
+
+.fi-app {
+  width: 100%;
+  background-color: var(--bg);
+  padding: 8rem 0;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.fi-app p {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--textlight);
+  margin: 1.5rem 0;
+}
+.fi-app ul {
+  padding-left: 0rem;
+}
+.fi-app ul li a {
+  margin-right: 1.5rem;
+}
+
+.fi-app .app-img {
+  width: 70%;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.fi-app .app-img img {
+  width: 100%;
+}
+
+/* ############ FOOTER #########  */
+footer {
+  width: 100%;
+  height: auto;
+  padding-top: 4rem;
+}
+footer .logo {
+  width: 220px;
+  height: auto;
+}
+
+footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+footer h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li a {
+  display: inline-block;
+  color: var(--textlight);
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+footer ul li a:hover {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+footer .social-icons li a {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-right: 2rem;
+}
+footer .social-icons li:nth-child(1) a:hover {
+  color: var(--facebook);
+}
+footer .social-icons li:nth-child(2) a:hover {
+  color: var(--instagram);
+}
+footer .social-icons li:nth-child(3) a:hover {
+  color: var(--youtube);
+}
+footer .social-icons li:nth-child(4) a:hover {
+  color: var(--twitter);
+}
